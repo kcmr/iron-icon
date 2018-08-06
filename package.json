@@ -26,7 +26,6 @@
   "main": "iron-icon.js",
   "author": "The Polymer Authors",
   "dependencies": {
-    "@polymer/iron-flex-layout": "^3.0.0-pre.20",
     "@polymer/iron-meta": "^3.0.0-pre.20",
     "@polymer/polymer": "^3.0.0"
   }

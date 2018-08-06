@@ -9,7 +9,6 @@ part of the polymer project is also subject to an additional IP rights grant
 found at http://polymer.github.io/PATENTS.txt
 */
 import '@polymer/iron-meta/iron-meta.js';
-import '@polymer/iron-flex-layout/iron-flex-layout.js';
 
 import {Polymer} from '@polymer/polymer/lib/legacy/polymer-fn.js';
 import {dom} from '@polymer/polymer/lib/legacy/polymer.dom.js';
@@ -89,10 +88,11 @@ Polymer({
   _template: html`
     <style>
       :host {
-        @apply --layout-inline;
-        @apply --layout-center-center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        align-self: auto;
         position: relative;
-
         vertical-align: middle;
 
         fill: var(--iron-icon-fill-color, currentcolor);
